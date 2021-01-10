@@ -1,7 +1,7 @@
 module "web_server" {
-  source = "./http_server"
+  source        = "./http_server"
   instance_type = "t3.nano"
-  profile = "ikhrnet"
+  profile       = "ikhrnet"
 }
 
 output "ami_id" {
