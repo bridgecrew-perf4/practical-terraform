@@ -6,4 +6,8 @@ provider "aws" {
 resource "aws_instance" "example" {
   ami           = "ami-0be2609ba883822ec"
   instance_type = "t3.nano"
+
+  tags = {
+    Name = "example"
+  }
 }
